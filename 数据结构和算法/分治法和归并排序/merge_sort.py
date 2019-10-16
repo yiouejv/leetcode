@@ -53,3 +53,5 @@ def test_merge_sort():
     random.shuffle(seq)
     assert merge_sort(seq) == sorted(seq)
     # assert 0
+
+
