@@ -15,7 +15,9 @@ class Solution(object):
         if not nums:
             return 0
 
+        if target > nums[len(nums) - 1]:
+            return len(nums)
+
         for i in range(len(nums)):
             if nums[i] >= target:
                 return i
-        return i + 1
