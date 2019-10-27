@@ -100,6 +100,40 @@ class LinkList(object):
 
 
 def test_linklist():
+    # ll = LinkList()
+    # ll.append(1)
+    # ll.append(2)
+    # ll.append(3)
+    # ll.append(4)
+    # ll.append(5)
+    #
+    # assert list(ll) == [1, 2, 3, 4, 5]
+    #
+    # assert ll.pop() == 5
+    # assert ll.pop() == 4
+    # assert ll.pop() == 3
+    #
+    # ll.appendleft(0)
+    # assert list(ll) == [0, 1, 2]
+    #
+    # ll.appendleft(-1)
+    # assert list(ll) == [-1, 0, 1, 2]
+    #
+    # ll.remove(0)
+    # assert list(ll) == [-1, 1, 2]
+    #
+    # ll.remove(0)
+    # assert list(ll) == [-1, 1, 2]
+    #
+    # ll.remove(2)
+    # assert list(ll) == [-1, 1]
+    #
+    # ll.remove(-1)
+    # assert list(ll) == [1]
+    #
+    # ll.remove(1)
+    # assert list(ll) == []
+    #
     ll = LinkList()
     ll.append(1)
     ll.append(2)
@@ -108,31 +142,7 @@ def test_linklist():
     ll.append(5)
 
     assert list(ll) == [1, 2, 3, 4, 5]
-
-    assert ll.pop() == 5
-    assert ll.pop() == 4
-    assert ll.pop() == 3
-
-    ll.appendleft(0)
-    assert list(ll) == [0, 1, 2]
-
-    ll.appendleft(-1)
-    assert list(ll) == [-1, 0, 1, 2]
-
-    ll.remove(0)
-    assert list(ll) == [-1, 1, 2]
-
-    ll.remove(0)
-    assert list(ll) == [-1, 1, 2]
-
-    ll.remove(2)
-    assert list(ll) == [-1, 1]
-
-    ll.remove(-1)
-    assert list(ll) == [1]
-
-    ll.remove(1)
-    assert list(ll) == []
-
+    ll.reverse()
+    assert list(ll) == [5, 4, 3, 2, 1]
 
 test_linklist()
